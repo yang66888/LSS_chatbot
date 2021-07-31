@@ -1,0 +1,180 @@
+{
+    "intent_errors": [
+        {
+            "text": "It looks like I don't have enough of my own boxes, so i left some of my things in bags... I also decided not to leave a suitcase, but i paid for a suitcase. Could i just change that suitcase order to more boxes?",
+            "intent": "changes_collection_or_dropoff_date_location_number_contacts",
+            "intent_prediction": {
+                "name": "ask_box",
+                "confidence": 0.9371457099914551
+            }
+        },
+        {
+            "text": "We would like our storage delivered earlier in August. What would be the latest slot you can do either on Tuesday the 4th of August or Wednesday the 5th?",
+            "intent": "ask_arrival_time",
+            "intent_prediction": {
+                "name": "changes_collection_or_dropoff_date_location_number_contacts",
+                "confidence": 0.9720990061759949
+            }
+        },
+        {
+            "text": "Dear SirMadam, I have just received the invoice for the boxes",
+            "intent": "invoice_payment_link",
+            "intent_prediction": {
+                "name": "special_inquiries",
+                "confidence": 0.7076926231384277
+            }
+        },
+        {
+            "text": "Okay, no problems Harry",
+            "intent": "acceptance",
+            "intent_prediction": {
+                "name": "None",
+                "confidence": 0.7502814531326294
+            }
+        },
+        {
+            "text": "I am afraid I would still need large boxes. Some of the items (like a printer) are too big to be fit into a standard box. Would it be possible to cancel my order?",
+            "intent": "ask_box",
+            "intent_prediction": {
+                "name": "special_inquiries",
+                "confidence": 0.42103391885757446
+            }
+        },
+        {
+            "text": "Can you please first confirm the price quote, as I'm comparing a cross the providers. In terms of number of items, my estimate is: 15 (or up to 20) boxes; 1 suitcase; 1 clothes hanger.",
+            "intent": "general_inquiries",
+            "intent_prediction": {
+                "name": "ask_box",
+                "confidence": 0.7260668277740479
+            }
+        },
+        {
+            "text": "I believe you've been talking to my dad about a collection process on July 8th from my Edinburgh student house. The apartment is on the top floor (3 floors) of 37 Warrender Park Road. My > contact number is 07826775128 and my name is Sydney Stevens.",
+            "intent": "collection_dropoff_return_instructions",
+            "intent_prediction": {
+                "name": "changes_collection_or_dropoff_date_location_number_contacts",
+                "confidence": 0.9644009470939636
+            }
+        },
+        {
+            "text": "If they are collecting the boxes tomorrow, would it still be possible to drop them at the new apartment instead of store?",
+            "intent": "collection_dropoff_return_instructions",
+            "intent_prediction": {
+                "name": "changes_collection_or_dropoff_date_location_number_contacts",
+                "confidence": 0.9828226566314697
+            }
+        },
+        {
+            "text": "Would I be able to have the stuff delivered outside a friends flat and directly transferred into the moving van?",
+            "intent": "collection_dropoff_return_instructions",
+            "intent_prediction": {
+                "name": "changes_collection_or_dropoff_date_location_number_contacts",
+                "confidence": 0.9414607286453247
+            }
+        },
+        {
+            "text": "The Hub have confirmed that July 13th is ok to collect my belongings. They need me to give them some way of identifying your team when so that they can give them the keys to my room on the 13th. How do we do this?",
+            "intent": "collection_dropoff_return_instructions",
+            "intent_prediction": {
+                "name": "changes_collection_or_dropoff_date_location_number_contacts",
+                "confidence": 0.8452414870262146
+            }
+        },
+        {
+            "text": "I was emailed yesterday that they would be picked up from the given location but haven't",
+            "intent": "special_inquiries",
+            "intent_prediction": {
+                "name": "changes_collection_or_dropoff_date_location_number_contacts",
+                "confidence": 0.9694465398788452
+            }
+        },
+        {
+            "text": "This must be wrong, as my boxes will only be kept until the beginning of October (I am still unsure of the date, as I am waiting to hear back from a landlord). If you could please correct this and issue another invoice with the according amount, I'd be happy to pay it.",
+            "intent": "special_inquiries",
+            "intent_prediction": {
+                "name": "ask_box",
+                "confidence": 0.6245021224021912
+            }
+        },
+        {
+            "text": "Just wanted to check my order is still coming",
+            "intent": "Check_order_information",
+            "intent_prediction": {
+                "name": "general_inquiries",
+                "confidence": 0.5899958610534668
+            }
+        },
+        {
+            "text": "Hi, I would like to cancel my booking for the storage of my boxes and receive a refund",
+            "intent": "cancel_order_request",
+            "intent_prediction": {
+                "name": "ask_box",
+                "confidence": 0.8906855583190918
+            }
+        },
+        {
+            "text": "Dear Whomever it may concern, Recently I made order 1309, for the 24th of March",
+            "intent": "cancel_order_request",
+            "intent_prediction": {
+                "name": "confirm_order",
+                "confidence": 0.6877814531326294
+            }
+        },
+        {
+            "text": "I understand it's a short time frame but I'm not in the UK and am trying to coordinate everything with a friend. I tried a few months ago and your movers couldnt come, and this is really my last chance to get this sorted. Ive had someone from the letting agency to let him know of your plans to pick up, for total transparency between me, the movers, and Braemore.",
+            "intent": "complaint",
+            "intent_prediction": {
+                "name": "changes_collection_or_dropoff_date_location_number_contacts",
+                "confidence": 0.9245157837867737
+            }
+        },
+        {
+            "text": "I just received the boxes this morning from reception because they wouldn't let me pick them up earlier because I wasn't notified of the boxes delivery by the university or until I had inquired about the boxes. If I had been informed of the pick-up time being earlier I could have accommodated the change. The university made it clear if I am allowed to leave the boxes at reception over the weekend they would be stored in a public place, which I am not comfortable with",
+            "intent": "complaint",
+            "intent_prediction": {
+                "name": "collection_dropoff_return_instructions",
+                "confidence": 0.9195104241371155
+            }
+        },
+        {
+            "text": "I'd like to confirm the delivery of my things on Tuesday the 15th at 16:00. At my new direction 3L 9 Commercial Street in Dundee.",
+            "intent": "address_day_confirmation",
+            "intent_prediction": {
+                "name": "changes_collection_or_dropoff_date_location_number_contacts",
+                "confidence": 0.9833357930183411
+            }
+        },
+        {
+            "text": "I was wondering if there were 10 boxes available for the summer",
+            "intent": "check_availability",
+            "intent_prediction": {
+                "name": "changes_collection_or_dropoff_date_location_number_contacts",
+                "confidence": 0.9595142602920532
+            }
+        },
+        {
+            "text": "Was C2A317 Now C2A314 SHOP SALE PRICE https:instantprintnews",
+            "intent": "promotion_revised_price_seeking",
+            "intent_prediction": {
+                "name": "order_paid",
+                "confidence": 0.5850871205329895
+            }
+        },
+        {
+            "text": "To clarify, she can request the delivery of any items throughout the year bu t she cannot go to the storage facility itself? How much notice does she need to give? Will she need to label the bags to help distinguish what's inside?",
+            "intent": "request_access_to_storage",
+            "intent_prediction": {
+                "name": "changes_collection_or_dropoff_date_location_number_contacts",
+                "confidence": 0.7061201930046082
+            }
+        },
+        {
+            "text": "Hi! I was wondering how it works if I have other large items that are not boxes which I need to place in storage. I have a cupboard, a desk, a carpet",
+            "intent": "special_items",
+            "intent_prediction": {
+                "name": "changes_collection_or_dropoff_date_location_number_contacts",
+                "confidence": 0.8634980320930481
+            }
+        }
+    ]
+}

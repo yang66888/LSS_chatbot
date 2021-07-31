@@ -1,0 +1,382 @@
+%YAML 1.1
+---
+actions:
+- utter_changes_collection_or_dropoff_date_location_number_contacts
+- utter_ask_arrival_time
+- utter_thanks
+- utter_invoice_payment_link
+- utter_packing_instructions
+- utter_ask_box
+- utter_acceptance
+- utter_general_inquiries
+- utter_img_provided
+- utter_collection_dropoff_return_instructions
+- utter_special_inquiries
+- utter_extend_storage
+- utter_confirm_order
+- utter_ask_packing
+- utter_items_missing
+- utter_not_delivered
+- utter_apologies
+- utter_greeting
+- utter_cancel_order_request
+- utter_check_order_information
+- utter_address_day_confirmation
+- utter_Place_order
+- utter_insurance
+- utter_complaint
+- utter_goodbye
+- utter_check_availability
+- utter_promotion_revised_price_seeking
+- utter_delay_payment
+- utter_check_if_returned
+- utter_time_confirmation
+- utter_clean_moving_service
+- utter_ask_about_delivery_contact_number
+- utter_notice_time
+- utter_request_access_to_storage
+- utter_ask_for_refund
+- utter_address_not_sure
+- utter_part_return
+- utter_disposal_request
+- utter_how_to_lable_boxes
+- utter_seek_price_confirmation
+- utter_order_paid
+- utter_special_items
+- get_order_information
+config:
+  store_entities_as_slots: true
+entities:
+- time
+- date
+- offer
+- drop-off
+- person
+- name
+- timeframe
+- fee
+- confirmation
+- CARDINAL
+- box
+- address
+- city
+- post code
+- reply
+- email
+- my item
+- desired date
+- order number
+- payment
+- change
+- date frame
+- order
+- contact number
+- packing service
+- packing material
+- covid-19
+- clothes
+- ORG
+- room
+- money
+- transaction
+- storage
+- information
+- access
+- bag
+- pickup
+- price
+- remaining things
+- website
+- part of a house
+- key
+- delivery
+- time slot
+- luggage
+- invoice
+- estimate
+- month
+- flat
+- transportation
+- refund
+- return
+- question
+- availability
+- call
+- flight
+- booking
+- service
+- quote
+- arrival
+- item
+- notice
+- cost
+- contract
+- home
+- location
+- video chat
+- apartment
+- warning
+- insurance
+- season
+- period
+- extension
+- image
+- year-round storage
+- suitcase
+- student
+- label
+- missing
+- furniture
+- country
+- everything
+- list
+- special item
+- promotion
+intents:
+- changes_collection_or_dropoff_date_location_number_contacts:
+    use_entities: true
+- ask_arrival_time:
+    use_entities: true
+- Thanks:
+    use_entities: true
+- invoice_payment_link:
+    use_entities: true
+- packing_instructions:
+    use_entities: true
+- ask_box:
+    use_entities: true
+- acceptance:
+    use_entities: true
+- general_inquiries:
+    use_entities: true
+- img_provided:
+    use_entities: true
+- collection_dropoff_return_instructions:
+    use_entities: true
+- special_inquiries:
+    use_entities: true
+- extend_storage:
+    use_entities: true
+- confirm_order:
+    use_entities: true
+- ask_packing:
+    use_entities: true
+- items_missing:
+    use_entities: true
+- not_delivered:
+    use_entities: true
+- apologies:
+    use_entities: true
+- greeting:
+    use_entities: true
+- cancel_order_request:
+    use_entities: true
+- Check_order_information:
+    use_entities: true
+- address_day_confirmation:
+    use_entities: true
+- Place_order:
+    use_entities: true
+- insurance:
+    use_entities: true
+- complaint:
+    use_entities: true
+- goodbye:
+    use_entities: true
+- check_availability:
+    use_entities: true
+- promotion_revised_price_seeking:
+    use_entities: true
+- delay_payment:
+    use_entities: true
+- check_if_returned:
+    use_entities: true
+- time_confirmation:
+    use_entities: true
+- None:
+    use_entities: true
+- clean_moving_service:
+    use_entities: true
+- ask_about_delivery_contact_number:
+    use_entities: true
+- notice_time:
+    use_entities: true
+- request_access_to_storage:
+    use_entities: true
+- ask_for_refund:
+    use_entities: true
+- address_not_sure:
+    use_entities: true
+- part_return:
+    use_entities: true
+- disposal_request:
+    use_entities: true
+- how_to_lable_boxes:
+    use_entities: true
+- seek_price_confirmation:
+    use_entities: true
+- order_paid:
+    use_entities: true
+- special_items:
+    use_entities: true
+slots:
+  order number:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+templates:
+  utter_Place_order:
+  - text: Thanks for your trust. We will send you an order confirmation email shortly
+      and inform you the following steps.
+  utter_acceptance:
+  - text: Great. Thanks for your enquiries.
+  utter_address_day_confirmation:
+  - text: Please log in via the ‘Manage Booking’ section of the website where you
+      can confirm and update your booking information. Thank you!
+  utter_address_not_sure:
+  - text: Don't worry, simply select ‘Not Sure’ at checkout and update this through
+      the ‘Manage Booking’ section over the summer when you know!
+  utter_apologies:
+  - text: No worries. We are here to help any time!
+  utter_ask_about_delivery_contact_number:
+  - text: Feel free to contact us on  0131 358 5075
+  utter_ask_arrival_time:
+  - text: We have tracking software which will allow you to track the driver when
+      he is nearby, as well as receiving updates during the day when the team are
+      nearby. Unfortunately, during busier times, we are unable to give specific times.
+      Please note that if you are in halls of residence that we collect from reception
+      and expect all items to be ready for us there.
+  utter_ask_box:
+  - text: 'On average, our customers use around 6 boxes (a mixture of small and large)
+      plus a suitcase or two. We recommend that you order more boxes than needed as
+      you only pay for what you use. Also be aware of our weight restrictions - so
+      it is often a good idea to have spare boxes that you can use to distribute weight
+      if necessary. The price and dimensions of the boxes can be found on our website:
+      https://www.localstudentstorage.com And if would like to add more boxes, please
+      email us, specifying how many boxes you would like to add. We will be happy
+      to do it for you info@localstudentstorage.com'
+  utter_ask_for_refund:
+  - text: Don't worry about it. Send us an email info@localstudentstorage.com and
+      we will deal with your request as quickly as we can. Please make it clear why
+      you require a refund. Your opinions and trust are the most important to us.
+      Thank you.
+  utter_ask_packing:
+  - text: We provide packing service. All you need to do is liaise with your estate
+      agent or student accommodation and send us a full inventory of items to pack.
+      We will bring with boxes and packing materials, carefully pack your room and
+      arrange a customary call (usually video call) to you whilst packing. We will
+      then store the items until you return to university or ship them to a new location!
+      We charge a transparent £65/h per packing job (our price includes packing materials
+      such as boxes, tape, bubble wrap). The minimum booking period is 1.5 hours.
+      Based on our experiences, most of the packing is usually done within one hour.
+  utter_cancel_order_request:
+  - text: DDon't worry about it. Send us an email info@localstudentstorage.com and
+      we will deal with your request as quickly as we can.  Please make it clear why
+      you would like us to cancel your order. Your opinions and trust are the most
+      important to us. Thank you!
+  utter_changes_collection_or_dropoff_date_location_number_contacts:
+  - text: Please log in via the ‘Manage Booking’ section of the website where you
+      can update your booking information and make changes.Thanks!
+  utter_check_availability:
+  - text: Thanks for getting interested in our service. Please book online through
+      the link on our website. This will allow you to check availability!
+  utter_check_if_returned:
+  - text: Please email us info@localstudentstorage.com and we will look into it for
+      you. Thanks!
+  utter_check_order_information:
+  - text: Please provide your order number, thanks!
+  utter_clean_moving_service:
+  - text: Unfortunately we do not offer this service!
+  utter_collection_dropoff_return_instructions:
+  - text: If you are in halls of residence, we will drop your boxes at reception so
+      that you don't have to wait around for us! Alternatively, if you're not in halls,
+      we are happy to leave your boxes with a delegated flatmate. Please email us
+      (info@localstudentstorage.com) with specific instructions. Don’t forget to include
+      your order number and the service you would like us to note. Thank you very
+      much!
+  utter_complaint:
+  - text: I am sorry to hear that you had an unpleasant experience with us. Please
+      email us info@localstudentstorage.com and we will get back to you as a matter
+      of urgency to resolve this.
+  utter_confirm_order:
+  - text: Got it, I am checking, please wait a moment!
+  utter_delay_payment:
+  - text: I understand your situation. Could you please email us info@localstudentstorage.com.
+      We will get back to you as soon as we can to see how we can manage this situation.
+      Thank you!
+  utter_disposal_request:
+  - text: We provide disposal service. We charge £100 for a disposal service. If you
+      would like us to dispose your items for you, please email us info@localstudentstorage.com.
+      Thank you.
+  utter_extend_storage:
+  - text: 'Yes, we can extend your storage. The weekly cost: £.90 per standard box,
+      £2 per large box, £2.60 per suitcase and £3.00 per trunk. If you would like
+      to extend your storage, please drop us a message at info@localstudentstorage.com.
+      Please include your order number and the extended storge period in the email.
+      Thank you very much!'
+  utter_general_inquiries:
+  - text: Thanks for being interested in our service, we are a company which is dedicated
+      to provide high-quality and students affordable storage services. Please see
+      our website for your required information (https://www.localstudentstorage.com).If
+      you are still unclear about some specific services, please leave a message at
+      the bottom of our website. Thank you!
+  utter_goodbye:
+  - text: No problem. Wish you have a nice day! Bye…
+  utter_greeting:
+  - text: Hi there! My name is Lindsey, your storage assistant. You can quit anytime
+      during our conversation by just texting ‘quit’. Is there anything I can help
+      with?
+  utter_how_to_lable_boxes:
+  - text: Do whatever way you like. Just make sure it is clear and recognisable.
+  utter_img_provided:
+  - text: Please send us an email with image attached info@localstudentstorage.com
+      Thanks!
+  utter_insurance:
+  - text: Insurance is not included in the price. Insurance can be organised through
+      us by selecting the insurance option when booking. See the Insurance Policy
+      for more details (https://www.localstudentstorage.com/insurance). Feel free
+      to email us regarding any questions on insurance or to request more information
+      info@localstudentstorage.com.
+  utter_invoice_payment_link:
+  - text: Don't worry. We will send you an invoice and you will pay through the payment
+      link we create for you. Thank you!
+  utter_items_missing:
+  - text: Please send us an email info@localstudentstorage.com and we will look into
+      it for you.
+  utter_not_delivered:
+  - text: Please email us info@localstudentstorage.com. We will look into it for you
+      ASAP.
+  utter_notice_time:
+  - text: One week at least, however, the sooner, the better.
+  utter_order_paid:
+  - text: Thanks for your trust. We will send you an order confirmation email shortly
+      and inform you the following steps.
+  utter_packing_instructions:
+  - text: Got it. Please send the list of inventories to info@localstudentstorage.com.
+      Don’t worry if you can’t recall all the items that need to be packed. Our team
+      will arrange a video call when packing your items!
+  utter_part_return:
+  - text: Please email us at info@localstudentstorage.com and we can organise.
+  utter_promotion_revised_price_seeking:
+  - text: Please pay attention to our website for promotion activities. If you have
+      any inquiry about price, please email us info@localstudentstorage.com
+  utter_request_access_to_storage:
+  - text: Sorry, due to the logistics of the storage facility, this is unfortunately
+      not possible. If you need some items during the storage, please email us info@localstudentstorage.com
+      and we will see how we can help you with it. Thanks!
+  utter_seek_price_confirmation:
+  - text: If you believe the price is not matched, please email us info@localstudentstorage.com
+      and we will check it for you.
+  utter_special_inquiries:
+  - text: Please email us info@localstudentstorage.com for this query and we will
+      get back to you as soon as possible. Thank you!
+  utter_special_items:
+  - text: Don’t worry. We accept irregular items. Measure the item, and select whichever
+      product it most closely resembles in size. Then send us an email with some more
+      details. info@localstudentstorage.com
+  utter_thanks:
+  - text: With pleasure. I'm always happy to assist you!Is there anything else I can
+      help you with?
+  utter_time_confirmation:
+  - text: Thanks for your confirmation. Please log in via the ‘Manage Booking’ section
+      of the website where you to confirm your return date and address or make any
+      changes. Thank you!

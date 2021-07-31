@@ -1,0 +1,2 @@
+model_checkpoint_path: "/Users/zhengyang/Desktop/working/storage_chatbot/model_new/nlu/default/LSS_chatbot/intent_classifier_tensorflow_embedding.ckpt"
+all_model_checkpoint_paths: "/Users/zhengyang/Desktop/working/storage_chatbot/model_new/nlu/default/LSS_chatbot/intent_classifier_tensorflow_embedding.ckpt"
