@@ -7,8 +7,8 @@ This research project is to develop a Chatbot model for LSS (Local Student Stora
 
 ## Files/folders contained in this project: 
 
-- folder data where metadata is saved which contains data.json(original data), training_data.json(80% of original data for training purposes), test_data(20% of original data for validation), datanew.json(new data with intents combined), training_data_new(80% of new data for training purposes),test_data_new(80% of new data for training purposes),storied.md 
-- folder model: dialogue where training policies sit and nlu where intent classifier and evaluation result sit.
+- data: where metadata is saved which contains data.json(original data), training_data.json(80% of original data for training purposes), test_data(20% of original data for validation), datanew.json(new data with intents combined), training_data_new(80% of new data for training purposes),test_data_new(80% of new data for training purposes),storied.md 
+- model: dialogue where training policies sit and nlu where intent classifier and evaluation result sit.
 - train_initialize.py
 - train_online.py
 - visualization.py
