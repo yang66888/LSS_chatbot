@@ -1,4 +1,4 @@
-# This is Dissertation project 
+# Dissertation project 
 
 ## Project Description: 
 
